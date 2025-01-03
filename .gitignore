@@ -1,0 +1,116 @@
+# freeze old assessments on github
+2020
+2022
+2024
+
+# R projects
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# usernames and passwords for db connections
+database.csv 
+
+# confidential fishery dependent data
+*confidential*
+
+# shapefiles
+general/shapefiles
+
+# old assessment archive
+archive
+
+# other rockfish photos for presentations
+general/photos
+
+2022/supplementary_analysis/
+*Noncommercial*
+**/raw
+**/supplementary_analysis
+**/supplementary_analysis/**
+
+# ADMB files
+.b0
+*.bar
+*.cov
+*.dep
+*.hes
+*.tmp
+*.log
+*.bar
+*.cor
+*.cout
+*.cpp
+*.ecm
+*.eva
+*.exe
+*.hst
+*.htp
+*.mc2
+*.mcm
+*.obj
+*.p01
+#*.par
+*.psv
+*.r01
+#*.rep
+*.std
+*.out
+*.ps
+dgs2
+diags
+.p0
+.r0
+*.prf
+*.r02
+*.plt
+*.pin
+*.obj
+*.htp
+gradient.*
+*_in.ctl
+*_in.dat
+*.luu
+*. rhes
+*.bgs
+hesscheck
+*.bin
+*.prj
+
+# Added for MCMC runs
+adaptation.csv
+ppl.csv
+unbounded.csv
+init.pin
+variance
+sims
+
+# other file types we don't want to track
+*.xlsx
+*.xlsm
+*.docx
+*.pptx
+*.png
+*.Rdata
+*.pdf
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Latex files
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.nav
+*.toc
+*.snm
+*.vrb
+*.tex.bak
+*.bak
+auto/
+
+*.Ink
+
+2024/data/total_lls_catch.csv
