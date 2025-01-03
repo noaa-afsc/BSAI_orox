@@ -1,0 +1,115 @@
+#Stock Assessment Results Archive (SARA) file for stocks managed under the North Pacific Fisheries Management Council
+#This form is only required for Tier 1-6 stocks in a full year, or Tier 1-3 stocks in a partial year 
+#There are four required sections to update: Assessment Summary, Fishing Mortality Estimates, Biomass Estimates, and Time Series Estimates with an optional fifth Survey Estimates section 
+#Please fill in the text (surrounded by " ") or data as values in the line after each field marked with a # and capitalized name (e.g., #STOCK, the next line should be "ATF") 
+#Note that several of the fields below may be static or only change occasionally, please see the SARA_User_Manual for more details
+#ASSESSMENT_SUMMARY -------------------------------------------------------------------------------------------------
+#STOCK
+"OROCK"
+#STOCK_NAME
+"Bering Sea / Aleutian Islands Other Rockfish Complex"
+#REGION
+"BSAI"
+#ASMT_TYPE
+"Operational"
+#ASMT_YEAR
+2024
+#ASMT_MONTH
+"Dec"
+#TIER
+"5"
+#NUM_SEXES
+"NA"          
+#NUM_FISHERIES
+1
+#REC_MULT
+"NA"
+#RECAGE
+"NA"      
+#COMPLEX
+"Yes"
+#LAST_DATA_YEAR
+2024
+#ASMT_MODEL_CATEGORY
+"2 - Index-Based"
+#ASMT_MODEL
+"Index Method"
+#MODEL_VERSION
+"22"
+#ENSEMBLE
+"NA"
+#LEAD_LAB
+"AFSC"
+#POC_EMAIL
+"jane.sullivan@noaa.gov"
+#REVIEW_RESULT
+"Full acceptance"
+#CATCH_INPUT_DATA
+3
+#ABUNDANCE_INPUT_DATA
+3
+#BIOLOGICAL_INPUT_DATA
+2
+#SIZEAGE_COMP_INPUT_DATA
+3
+#ECOSYSTEM_LINKAGE
+0
+#FISHING_MORTALITY_ESTIMATES ----------------------------------------------------------------------------------------
+#F_YEAR
+2023
+#F_BASIS
+"Total catch/total complex biomass"
+#F_UNIT
+"Exploitation Rate"
+#BEST_F_ESTIMATE
+0.031
+#F_LIMIT
+0.035
+#F_LIMIT_BASIS
+"M (complex weighted average)"
+#F_MSY
+0.035
+#F_MSY_BASIS
+"F = complex weighted average M"
+#BIOMASS_ESTIMATES --------------------------------------------------------------------------------------------------
+#B_YEAR
+2024
+#B_BASIS
+"Total Complex Biomass"
+#B_UNIT
+"Metric Tons"
+#BEST_B_ESTIMATE
+40559
+#LOWER_B_ESTIMATE
+"NA"
+#UPPER_B_ESTIMATE
+"NA"
+#ESTIMATE_METHOD
+"NA"
+#INTERVAL_SIZE
+"NA"
+#B_MSY
+"NA"
+#B_MSY_BASIS
+"NA"
+#TIME_SERIES_ESTIMATES ----------------------------------------------------------------------------------------------
+#FISHERYYEAR
+1991	1992	1993	1994	1995	1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019	2020	2021	2022	2023	2024
+#AGE
+"NA"	
+#RECRUITMENT
+"NA"
+#SPAWNBIOMASS
+"NA"
+#TOTALBIOMASS
+19868	19795	19830	19935	20720	21598	22650	21195	20162	23377	27261	31730	34533	39014	40621	43165	43304	45496	46008	49093	52299	48897	53487	58349	61134	57373	57360	55573	53840	51251	48880	43275	39492	40559
+#TOTFSHRYMORT
+NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.020	0.016	0.011	0.013	0.015	0.013	0.012	0.016	0.018	0.019	0.015	0.016	0.011	0.013	0.014	0.018	0.024	0.021	0.020	0.030	0.031	0.028
+#TOTALCATCH
+NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	685	633	447	570	646	596	566	766	945	919	789	913	651	768	828	986	1274	1095	1001	1308	1223	1125
+#SURVEYDESC
+"Aleutian Islands Groundfish Bottom Trawl"; "Eastern Bering Sea Upper Continental Slope Groundfish Bottom Trawl"; "Eastern Bering Sea sShelf Groundfish Bottom Trawl", "GOA/EBS/AI Longline Survey"
+#STOCKNOTES
+"SAFE report indicates that this stock was not subjected to overfishing in 2023."
+#SURVEY_ESTIMATES [OPTIONAL] ------------------------------------------------------------------------------------------
+#"NA"
