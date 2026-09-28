@@ -49,7 +49,7 @@ nonsst_biomass_dat %>% filter(strata == 'EBS Shelf') %>% nrow()
 cpue_dat <- read_csv(here(yr, "data", "lls_rpw_sst.csv")) %>% 
   filter(strata == 'EBS Slope')
 
-# M22 add LLS in EBS slope for SST ----
+# M22 SST ----
 input <- prepare_rema_input(model_name = 'M22_2026',
                             biomass_dat = sst_biomass_dat,
                             sum_cpue_index = TRUE,
@@ -131,7 +131,7 @@ m22_tot %>%
               summarise(biomass = sum(pred)) %>% 
               pivot_wider(id_cols = year, names_from = model_name, values_from = biomass) %>% 
               arrange(year) %>% 
-              mutate(species_group = 'Total')) %>% 
+              mutate(species_group = 'Total')) %>% print(n=Inf)
   write_csv(here(yr, "results", "tot_biomass.csv"))
 
 m22_strata <- tidy_rema(m22_sst)$biomass_by_strata %>% 
@@ -154,6 +154,7 @@ spp_abc <- m22_tot %>%
   mutate(OFL = biomass * M,
          maxABC = biomass * (0.75 * M)) 
 
+spp_abc
 spp_abc %>% write_csv(here(yr, "results", "abc_ofl_by_sppgroup.csv"))
 
 sumtable <- spp_abc %>% 
@@ -161,6 +162,7 @@ sumtable <- spp_abc %>%
   dplyr::summarise(biomass = sum(biomass),
             OFL = sum(OFL),
             maxABC = sum(maxABC)) 
+sumtable
 sumtable %>% write_csv(here(yr, "results", "abc_ofl_summary.csv"))
 
 # apportionment ----

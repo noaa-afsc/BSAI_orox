@@ -50,7 +50,7 @@ my_ids <- lkup %>%  pull(area_id)
 biom <- tbl(akfin, sql("gap_products.akfin_biomass")) %>%
 # biom <- tbl(afsc, sql("gap_products.biomass")) %>%
   rename_all(tolower) %>%
-  select(survey_definition_id, area_id, species_code, year, biomass_mt, biomass_var) %>%
+  select(survey_definition_id, area_id, species_code, year, biomass_mt, biomass_var, akfin_load_date) %>%
   filter(species_code %in% my_spp_codes & area_id %in% my_ids ) %>% #& & year >= 1987 &
            # biomass_mt != 0 & biomass_var != 0) %>%
   collect() %>%
@@ -62,7 +62,7 @@ biom <- tbl(akfin, sql("gap_products.akfin_biomass")) %>%
          group = ifelse(common_name %in% c("shortspine thornyhead"), "SST", "non-SST")) %>%
   arrange(survey, group, common_name, year) %>%
   select(survey, area_name, common_name, group, year, biomass = biomass_mt, var = biomass_var, 
-         survey_definition_id, area_id, species_code)
+         survey_definition_id, area_id, species_code, akfin_load_date)
 
 write_csv(biom, here(yr, "data", "raw", "biomass_orox.csv"))
 
